@@ -1,11 +1,9 @@
 package com.getthrough.springinaction.sia.knights.configuration;
 
-import com.getthrough.springinaction.sia.knights.BraveKnight;
-import com.getthrough.springinaction.sia.knights.Knight;
-import com.getthrough.springinaction.sia.knights.Quest;
-import com.getthrough.springinaction.sia.knights.SlayDragonQuest;
+import com.getthrough.springinaction.sia.knights.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * <p>
@@ -16,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2019-04-27
  */
 @Configuration
+@EnableAspectJAutoProxy
 public class KnightConfig {
 
     @Bean
@@ -26,6 +25,11 @@ public class KnightConfig {
     @Bean
     public Quest quest() {
         return new SlayDragonQuest(System.out);
+    }
+
+    @Bean
+    public Minstrel minstrel() {
+        return new Minstrel(System.out);
     }
 
 }

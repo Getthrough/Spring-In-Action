@@ -10,7 +10,6 @@
     <packaging>war</packaging>
 
     <name>spring-in-action Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
     <properties>
@@ -18,7 +17,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <springframework.version>4.0.7.RELEASE</springframework.version>
-        <aspectj.version>1.7.2</aspectj.version>
+        <aspectj.version>1.9.2</aspectj.version>
         <log4j.verson>1.2.14</log4j.verson>
         <mockito.version>1.9.5</mockito.version>
     </properties>
