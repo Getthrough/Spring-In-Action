@@ -2,6 +2,7 @@ package com.getthrough.springinaction.sia.knights.configuration;
 
 import com.getthrough.springinaction.sia.knights.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -15,6 +16,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @EnableAspectJAutoProxy
+@ComponentScan
 public class KnightConfig {
 
     @Bean
